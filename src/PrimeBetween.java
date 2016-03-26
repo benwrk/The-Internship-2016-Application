@@ -49,7 +49,7 @@ public class PrimeBetween {
     /**
      * Test whether the given number is a prime.
      *
-     * @param n - a number to be tested
+     * @param n a number to be tested
      * @return true if n is a prime, false otherwise
      */
     public static boolean isPrime(int n) {

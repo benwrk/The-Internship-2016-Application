@@ -1,5 +1,3 @@
-import java.util.Observable;
-import java.util.Observer;
 import java.util.Scanner;
 
 /**
@@ -8,9 +6,13 @@ import java.util.Scanner;
  * @author Benjapol Worakan
  */
 public class MaxMinOfEightNumbers {
-    /** Default input size. */
+    /**
+     * Default input size.
+     */
     private static final int N = 8;
-    /** A Scanner that is shared between methods. */
+    /**
+     * A Scanner that is shared between methods.
+     */
     private static final Scanner scanner = new Scanner(System.in);
 
     /**
@@ -27,10 +29,11 @@ public class MaxMinOfEightNumbers {
     }
 
     /**
+     * Continuously receive inputs and calculates max/min.
      *
      * @param times numbers of data - 1.
-     * @param max a reference to MutableInteger, its value will be updated to the max value.
-     * @param min a reference to MutableInteger, its value will be updated to the min value.
+     * @param max   a reference to MutableInteger, its value will be updated to the max value.
+     * @param min   a reference to MutableInteger, its value will be updated to the min value.
      */
     private static void receive(int times, MutableInteger max, MutableInteger min) {
         if (times <= 0) {
@@ -57,7 +60,7 @@ public class MaxMinOfEightNumbers {
          *
          * @return the value of this MutableInteger.
          */
-        public int getValue() {
+        int getValue() {
             return value;
         }
 
@@ -66,7 +69,7 @@ public class MaxMinOfEightNumbers {
          *
          * @param value the new value of this MutableInteger.
          */
-        public void setValue(int value) {
+        void setValue(int value) {
             this.value = value;
         }
 

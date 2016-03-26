@@ -43,7 +43,7 @@ public class UniqueWords {
 
     /**
      * Count unique words in the given String.
-     *
+     * <p>
      * Works by case-insensitvely putting words with punctuation removed into a Set.
      *
      * @param input the String to be counted for unique words
